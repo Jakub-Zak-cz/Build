@@ -1,21 +1,20 @@
 @font-face {
-  font-family: 'HelveticaNeueCyr';
-  src: url('../fonts/Helvetica/HelveticaNeueCyr-Roman.eot');
-  src: local('HelveticaNeueCyr-Roman'),
-      url('../fonts/Helvetica/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/Helvetica/HelveticaNeueCyr-Roman.woff2') format('woff2'),
-      url('../fonts/Helvetica/HelveticaNeueCyr-Roman.woff') format('woff'),
-      url('../fonts/Helvetica/HelveticaNeueCyr-Roman.ttf') format('truetype');
+  font-family: "Museo Sans Bold";
+  src: url("../fontsMuseoSansCyrl-700.eot");
+  src: url("MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fontsMuseoSansCyrl-700.woff") format("woff"), url("../fontsMuseoSansCyrl-700.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
-
-
-
-
+@font-face {
+  font-family: "Museo Sans Light";
+  src: url("../fonts/MuseoSansCyrl-300.eot");
+  src: url("MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
-  font-family: "HelveticaNeueCyr" , sans-serif;
+  font-family: "Museo Sans Light", sans-serif;
+  font-weight: 300;
 }
 
 img {
@@ -36,6 +35,8 @@ img {
 .button {
   background-color: #ffd200;
   border: none;
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
 }
 
 .header {
@@ -112,6 +113,8 @@ img {
   padding-right: 200px;
   line-height: 55px;
   margin: 45px 0;
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
 }
 @media (max-width: 1200px) {
   .main-text__title {

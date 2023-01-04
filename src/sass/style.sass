@@ -1,7 +1,7 @@
 @import "vars"
-
+@import "fonts"
 body
-    font-family: sans-serif
+    +reg
 
 img
     width: 100%
@@ -15,6 +15,7 @@ img
 .button
     background-color: $buttons
     border: none
+    +bold
 
 .header
 
@@ -73,6 +74,7 @@ img
             padding-right: 200px
             line-height: 55px
             margin: 45px 0
+            +bold
             @media (max-width: 1200px )
                 padding-right: 30px
             @media (max-width: 640px)
