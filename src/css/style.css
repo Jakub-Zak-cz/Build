@@ -268,7 +268,7 @@ img {
   width: 100%;
   min-height: 70px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
   .offer__button {
     font-size: 13px;
   }
@@ -277,4 +277,29 @@ img {
   .offer__button {
     font-size: 16px;
   }
+}
+.offer__under-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+@media (max-width: 1200px) {
+  .offer__under-wrap {
+    flex-direction: column;
+  }
+}
+.offer__under-info {
+  display: inline-block;
+  margin-bottom: 7px;
+}
+@media (max-width: 1200px) {
+  .offer__left {
+    margin-bottom: 15px;
+  }
+}
+.offer__under-wrap a {
+  color: #333;
+  text-decoration: none;
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
