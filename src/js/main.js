@@ -19,13 +19,37 @@ $(document).ready(function(){
 
     var button = $("#button");
     var modal = $("#modal");
-    var close = $("#close")
+    var close = $("#close");
 
     button.on("click", function(){
-        modal.addClass("modal_active")
-    })
+        modal.addClass("modal_active");
+    });
 
     close.on("click", function(){
-        modal.removeClass("modal_active")
-    })
-})
+        modal.removeClass("modal_active");
+    });
+
+    $(".slider").slick({
+        slidesToShow: 3,
+        prevArrow: $(".arrows__left"),
+        nextArrow: $(".arrows__right"),
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 2,
+              }
+            },
+            
+            {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 1,
+                }
+              }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+    });      
+});
