@@ -16,6 +16,8 @@
 přidali event při kliknutí odebrání class active díky tomu se okno zavře  */
 
 $(document).ready(function(){
+  // Napojeni knihovny wow JS
+  new WOW().init();
 
     var button = $("#button");
     var modal = $("#modal");
