@@ -364,12 +364,12 @@ body {
 .card {
   text-align: center;
   border: 1px solid #e8e8e8;
+  margin-bottom: 30px;
 }
 @media (max-width: 768px) {
   .card {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
   }
 }
 .card:hover {
