@@ -444,6 +444,12 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .icons {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
 
 .icon {
   text-align: center;
@@ -467,6 +473,11 @@ body {
   display: inline-block;
   font-size: 14px;
   line-height: 20px;
+}
+@media (max-width: 768px) {
+  .icon__text {
+    margin-bottom: 30px;
+  }
 }
 .icon__image {
   width: 100px;
@@ -496,6 +507,12 @@ body {
   margin: auto;
   line-height: 50px;
   font-weight: 300;
+}
+@media (max-width 768px) {
+  .notice__text {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
 .modal {

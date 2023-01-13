@@ -324,6 +324,9 @@ body
 .icons
     display: flex
     justify-content: space-between
+    @media ( max-width: 768px )
+        flex-wrap: wrap
+        flex-direction: column
 .icon
     text-align: center
     position: relative
@@ -345,6 +348,9 @@ body
         display: inline-block
         font-size: 14px
         line-height: 20px
+        @media (max-width: 768px)
+            margin-bottom: 30px
+
     &__image
         width: 100px
         height: 100px
@@ -369,6 +375,9 @@ body
         margin: auto
         line-height: 50px
         font-weight: 300
+        @media (max-width 768px)
+            font-size: 12px
+            line-height: 18px
 
 .modal
     position: fixed
