@@ -365,6 +365,13 @@ body {
   text-align: center;
   border: 1px solid #e8e8e8;
 }
+@media (max-width: 768px) {
+  .card {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+}
 .card:hover {
   box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
   transition: 0.2s;
