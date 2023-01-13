@@ -485,6 +485,19 @@ body {
   height: 30px;
 }
 
+.notice {
+  background-color: #ffc000;
+  padding: 100px 0;
+}
+.notice__text {
+  text-align: center;
+  font-size: 32px;
+  max-width: 750px;
+  margin: auto;
+  line-height: 50px;
+  font-weight: 300;
+}
+
 .modal {
   position: fixed;
   left: 0;
