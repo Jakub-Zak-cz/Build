@@ -15,6 +15,37 @@
 /* dali jsme btn se znamením křížku id close které jsme
 přidali event při kliknutí odebrání class active díky tomu se okno zavře  */
 
+//validace formulářů
+
+$("#brief-form").validate({
+  rules: {
+    username:"required",
+    email: {
+      required: true,
+      email: true,
+    },
+
+    phone: {
+      required : true,
+    }
+    
+  },
+  
+  messages: {
+    username:"Uveďte vaše jméno",
+    email:"Potřebujeme váš email",
+      
+    
+    phone: "Uveďte vaše číslo"
+   
+  }
+  
+ 
+  
+});
+
+
+
 $(document).ready(function(){
   // Napojeni knihovny wow JS
   new WOW().init();
@@ -53,5 +84,5 @@ $(document).ready(function(){
             // settings: "unslick"
             // instead of a settings object
           ]
-    });      
+    }); 
 });
