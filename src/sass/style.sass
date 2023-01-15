@@ -326,7 +326,7 @@ body
 .icons
     display: flex
     justify-content: space-between
-    @media ( max-width: 768px )
+    @media ( max-width: 960px )
         flex-wrap: wrap
         flex-direction: column
 .icon
@@ -350,7 +350,7 @@ body
         display: inline-block
         font-size: 14px
         line-height: 20px
-        @media (max-width: 768px)
+        @media (max-width: 960px)
             margin-bottom: 30px
 
     &__image
@@ -387,8 +387,9 @@ body
 .benefits
     display: flex
     justify-content: space-between
-    @media (max-width: 768px)
+    @media (max-width: 960px)
         flex-wrap: wrap
+        flex-direction: column
         align-items: center
         justify-content: center
 .benefit
@@ -398,7 +399,7 @@ body
     justify-content: space-between
     max-width: 370px
     position: relative
-    @media (max-width: 768px)
+    @media (max-width: 960px)
         margin-bottom: 30px
 
     &__image
@@ -413,17 +414,20 @@ body
             +bold
 .documents__title
     margin-bottom: 100px
-    @media (max-width: 768px)
+    @media (max-width: 960px)
         font-size: 18px
         line-height: normal
         +bold
 .documents-block
     display: flex
     justify-content: space-between
-    @media (max-width: 768px)
+    @media (max-width: 960px)
         flex-wrap: wrap
+        flex-direction: column
         align-items: center
         justify-content: center
+    & img
+        @media (max-width: 768px)
 
     &__text
         text-align: center
