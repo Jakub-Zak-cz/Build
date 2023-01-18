@@ -85,6 +85,8 @@ body
 
     &-image
         margin-right: -55px
+        img
+            width: 100%
         @media (max-width: 1200px )
             width: 100%
 
@@ -344,6 +346,8 @@ body
         width: 72px
         height: 25px
         background-image: url("../img/iconArrowright.png")
+        @media ( max-width: 1200px)
+            display: none
 
     &__text
         max-width: 140px
@@ -387,11 +391,11 @@ body
 .benefits
     display: flex
     justify-content: space-between
-    @media (max-width: 960px)
-        flex-wrap: wrap
-        flex-direction: column
-        align-items: center
-        justify-content: center
+    flex-wrap: wrap
+    align-items: stretch
+    @media (max-width: 1200px)
+        justify-content: space-around
+
 .benefit
     background-color: $benefit-bg
     display: flex
@@ -399,8 +403,8 @@ body
     justify-content: space-between
     max-width: 370px
     position: relative
-    @media (max-width: 960px)
-        margin-bottom: 30px
+    @media (max-width: 1200px)
+        margin-bottom: 50px
 
     &__image
         position: absolute
@@ -466,6 +470,9 @@ body
         width: 100%
         max-width: 370px
         margin-bottom: 15px
+        margin-top: 15px
+        outline: none
+        text-decoration: none
     &__button
         width: 100%
         max-width: 370px
@@ -539,6 +546,12 @@ body
             margin-bottom: 40px
     &__description
         font-size: 15px
+#brief-form
+    label
+        padding: 10px
+        display: inline-block
+        border-radius: 10px
+
 .footer
     position: relative
     @media ( max-width: 768px )
